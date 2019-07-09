@@ -5,7 +5,7 @@ class SingleProduct extends Component {
         return(
             <div>
                 Desde la ventana de 1 solo producto.
-                <li>{this.props.info.id}</li>
+                {console.log(this.props)}
             </div>
         )
     }
