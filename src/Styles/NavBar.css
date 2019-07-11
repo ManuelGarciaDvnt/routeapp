@@ -1,0 +1,78 @@
+#navBar{
+    display: none;
+    opacity: 0;
+    position: relative;
+    z-index: -10;
+}
+
+#navBar:checked~.App__navbar{
+    padding: 25px 35px;
+    max-height: 100vh;
+}
+
+.App__navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: all ease .3s;
+}
+
+.btn-show-menu{
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-show-menu img{
+    height: 100%;
+}
+
+.navItem{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 12px;
+    position: relative;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px){
+    .btn-show-menu{
+        display: none;
+    }
+
+    .App__navbar{
+        display: flex;
+        padding: 25px 35px;
+        max-height: 100vh;
+    }
+    .navItem{
+        margin-bottom: 0px;
+    }
+}
+
+.navItem::before{
+    content: '';
+    width: 0%;
+    background-color: #00EFBE;
+    height: 4px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: all ease-in .1s;
+}
+
+.navItem:hover.navItem::before{
+    width: 100%;
+}
+
+@media screen and (min-width: 700px){
+    .App__navbar{
+        flex-direction: row;
+    }
+}

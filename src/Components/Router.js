@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter ,Route, Switch} from 'react-router-dom';
 import Home from './Home';
-import Nosotros from './Nosotros';
+import Contact from './Contact';
 import FileError from './FileError';
 import infoproductos from './../Data/products.json';
 import Productos from './Productos';
 import Header from './Header';
 import SingleProduct from './SingleProduct';
+import Footer from './Footer';
 
 class Router extends Component{
 
@@ -27,8 +28,10 @@ class Router extends Component{
                 <div className='container'>
                     <Header/>
                     <Switch>
-                        <Route exact path='/' render={()=>(<Home/>)} />
-                        <Route exact path='/nosotros' render={()=>(<Nosotros/>)} />
+                        <Route exact path='/' render={()=>(<Home
+                            product={this.state.products[2]}
+                        />)} />
+                        <Route exact path='/contact' render={()=>(<Contact/>)} />
                         <Route exact path='/products' render={()=>(
                             <Productos
                                 products={this.state.products}
@@ -44,6 +47,7 @@ class Router extends Component{
                         />
                     </Switch>
                 </div>
+                <Footer/>
             </BrowserRouter>
         )
     }

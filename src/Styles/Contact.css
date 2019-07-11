@@ -1,0 +1,77 @@
+.contact__header{
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.contact__form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 700px){
+    .form-group{
+        flex-direction: row;
+    }
+    .form-group .contact__input-group{
+        width: 49%;
+    }
+}
+
+.contact__input-group{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact__input-group :first-child{
+    border: solid 1px #2e2e2e;
+    padding: 10px;
+    border-radius: 13px;
+}
+
+.contact__input-group label{
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    color: #2e2e2e;
+    transition: all ease-in-out .3s;
+    font-weight: bold;
+}
+
+.contact__input:focus,.contact__txtarea:focus{
+    border: solid 1px #00EFBE;
+}
+
+.contact__input:focus+label,.contact__txtarea:focus+label{
+    transform: translateY(-30px);
+    font-size: 14px;
+}
+
+.contact__txtarea{
+    min-height: 200px;
+    resize: none;
+}
+
+.contact__btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__link{
+    display: block;
+    color: #5b2ed8;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+

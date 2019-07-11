@@ -1,0 +1,20 @@
+.btn{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-family: 'Raleway';
+    border-radius: 7px;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+.btn.btn--green{
+    padding: 10px 20px;
+    background-color: rgb(50, 219, 168);
+    color: #fff;
+}
+.btn.btn--white{
+    border: solid 1px #272727;
+    color: #272727;
+    background-color: #fff;
+}

@@ -1,22 +1,72 @@
 [
     {   
         "id": 0,
-        "name": "Camiseta de Playa Sunrise",
-        "price":9.00
+        "name": "Camiseta Batman vs Superman",
+        "icon": "bvs",
+        "description": "Porque elegir un bando pasó de moda, lleva ambas insignias en una sola.",
+        "price":19.00
     },
     {   
         "id": 1,
-        "name": "Lentes de sol Dr.Bom",
+        "name": "Camiseta DeadPool",
+        "icon": "deadpool",
+        "description": "La primera regla para un anti-heroe es no seguir las reglas xD",
         "price":7.00
     },
     {
         "id": 2,
-        "name": "Pantalones Chavón",
-        "price":5.00
+        "name": "Playera Peter",
+        "icon": "deadpool-peter",
+        "description": "Seamos buenos gordis, unidos por la X-FORCE.",
+        "price": 15.90
     },
     {
         "id": 3,
-        "name": "Camiseta Lion King",
-        "price":18.00
+        "name": "Camiseta Fortnite",
+        "icon": "fortnite",
+        "description": "Serás el mejor de 100??",
+        "price": 18.00
+    },
+    {
+        "id": 4,
+        "name": "Camiseta Homero",
+        "icon": "homer",
+        "description": "Lleva la insignia de la elegancia de Francia junto a Homero.",
+        "price": 16.90
+    },
+    {
+        "id": 5,
+        "name": "Camiseta Ralph",
+        "icon": "ralph",
+        "description": "Solo para amantes de lo retro",
+        "price": 24.60
+    },
+    {
+        "id": 6,
+        "name": "Camiseta Rocket & Groot",
+        "icon": "rocketgroot",
+        "description": "Listo para la batalla contra el titan loco Thanos?. Quítale su caldito.",
+        "price": 18.30
+    },
+    {
+        "id": 7,
+        "name": "Camiseta Team Cap",
+        "icon": "team-cap",
+        "description": "Sigue el lado de la justicia con el #teamcap",
+        "price": 15.90
+    },
+    {
+        "id": 8,
+        "name": "Camiseta Thanos",
+        "icon": "Thanos-Black",
+        "description": "Aniquilar a la mitad del universo es tu misión. Para una prosperidad a futuro se deben hacer sacrificios.",
+        "price": 18.90
+    },
+    {
+        "id": 9,
+        "name": "Camiseta WoW Horda",
+        "icon": "wowhorde",
+        "description": "Siente la fuerza de un auténtico guerrero entrando al bando definitivo LOKG THAR HOGAR.",
+        "price": 98.00
     }
 ]
